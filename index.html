@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAV Systems</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f072c;
+        }
+    </style>
+</head>
+<body>
+<h1><span style="color: #ffffff; text-align: center; display: block;">DAV Systems</span></h1>
+<h1><span style="color: #1b00a2; text-align: center; display: block;">Login</span></h1>
+
+    <form style="text-align: center; margin-top: 50px;">
+        <label><span style="color: #ffffff;" text-align="center">Username</span></label>
+        <input id="Username" type="text" placeholder="Username"><span style="color: #ffffff;" text-align="center"></span><br><br>
+        <label><span style="color: #ffffff;" text-align="center">Password</span></label>
+        <input id="Password" type="password" placeholder="Password"><span style="color: #ffffff;" text-align="center"></span><br><br>
+        <button onclick="login()">Login</button>
+        <script>
+            function login(){
+                let Username = document.getElementById("Username")
+                let Password = document.getElementById("Password")
+
+                if(Username.value == "joseph" && Password.value == "1947") {
+                    alert("Login successful!")
+                    window.location.href = "informations.html";
+                } else {
+                    alert("Invalid username or password.")
+                }
+            }   
+        </script>
+
+    </form>
+
+<p><span style="color:midnightblue"size="smaller">user: joseph</span></p>
+<p><span style="color:midnightblue"size="smaller">password: 1947</span></p>
+
+</body>
+</html>
